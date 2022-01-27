@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning</title>
+</head>
+<body>
+    <h1>Heart Attack Prediction Based on Machine Learning</h1>
+        <h2>About :</h2>    
+        <p>It is a simple apprach to predict,Future Health condition of people by taking the basicinputs like age,gender,Cholestrol and heartbeats where a normal person can track using some wrist band or something.
+            Author Harish B
+        </p>
+        <h2>Aim:</h2>
+        <P>A person can track is health condition,even if he can't go to hospital for regular diagnosis </P>
+
+    <form action="/predict" method=["GET","POST"]>
+        <label for="age">Enter Your Age :</label>
+        <input type="text" name="age" id="age" placeholder="Enter Age">
+        <br>
+        <label for="sex">Enter You Gender(1 = male; 0 = female) :</label>
+        <input type="text" name="sex" id="sex" placeholder="Enter gender">
+        <br>
+        <label for="chol">Enter Your Cholestrol in mg/dL :</label>
+        <input type="text" name="chol" id="chol" placeholder="Enter chol ">
+        <br>
+        <label for="thalachh">Enter thalach (MaxHR: Greatest number of beats per minute your heart can possibly reach during all-out strenuous exercise.):
+        </label>
+        <input type="text" name="thalachh" id="thalachh" placeholder="Enter thalach ">
+        <br>
+        <br>
+        <button type="submit">Predict</button>
+
+    </form>
+
+    <h2> {{prediction_text}}</h2>
+</body>
+</html>
