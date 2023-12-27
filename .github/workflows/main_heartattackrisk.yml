@@ -54,4 +54,4 @@ jobs:
           app-name: 'heartattackrisk'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C2CF8373D4614DCFBF4F115910430B54 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_620376F1ACD14E138D6CF53E77F57072 }}
